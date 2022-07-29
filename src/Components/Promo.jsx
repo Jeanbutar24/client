@@ -27,8 +27,8 @@ const Promo = () => {
         <H2>Promo Today !!!</H2>
       </Title>
       <WraperContainer>
-        {productPromo.map((item) => (
-          <PromoProduct item={item} />
+        {productPromo.map((item, index) => (
+          <PromoProduct item={item} key={index} />
         ))}
       </WraperContainer>
     </Container>

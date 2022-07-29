@@ -18,8 +18,8 @@ const Product = () => {
   return (
     <Container>
       <WraperContainer>
-        {product.map((item) => (
-          <ProductItem  item={item} />
+        {product.map((item, index) => (
+          <ProductItem item={item} key={index} />
         ))}
       </WraperContainer>
     </Container>
